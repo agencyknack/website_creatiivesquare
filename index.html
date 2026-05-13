@@ -304,28 +304,6 @@
       text-transform: uppercase;
     }
 
-    .scroll-cue {
-      position: absolute;
-      left: 50%;
-      bottom: 32px;
-      z-index: 3;
-      transform: translateX(-50%);
-      font-family: var(--display);
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      color: rgba(255, 255, 255, 0.82);
-      animation: scrollBounce 2.2s ease-in-out infinite;
-    }
-
-    @keyframes scrollBounce {
-      0%, 100% {
-        transform: translate(-50%, 0);
-      }
-      50% {
-        transform: translate(-50%, 8px);
-      }
-    }
-
     @keyframes heroDrift {
       0% {
         transform: translate3d(-1.5%, 1%, 0) scale(1);
@@ -970,6 +948,23 @@
       font-size: 12px;
     }
 
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin-top: 14px;
+      color: var(--lavender);
+      font-size: 12px;
+    }
+
+    .contact-links a {
+      transition: color 0.3s ease;
+    }
+
+    .contact-links a:hover {
+      color: var(--rose);
+    }
+
     .site-footer {
       display: grid;
       grid-template-columns: 1fr auto 1fr;
@@ -1074,22 +1069,6 @@
         bottom: 28px;
         max-width: calc(100% - 130px);
         line-height: 1.5;
-      }
-
-      .scroll-cue {
-        bottom: 30px;
-        left: auto;
-        right: 22px;
-        transform: none;
-      }
-
-      @keyframes scrollBounce {
-        0%, 100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(8px);
-        }
       }
 
       .container {
@@ -1237,7 +1216,6 @@
         <p class="hero-subcopy">Editorial imagery for makeup artists ready to be seen differently.</p>
       </div>
       <p class="hero-est">Est. 2017 · 8 Years of Editorial Bridal Work</p>
-      <a class="scroll-cue" href="#opening">↓ Scroll</a>
     </section>
 
     <section class="opening" id="opening">
@@ -1276,7 +1254,7 @@
             <img src="Portfolio/08.webp" alt="Editorial bridal photography portrait" loading="lazy" decoding="async">
           </div>
         </div>
-        <a class="portfolio-link reveal" href="#">View Full Portfolio →</a>
+        <a class="portfolio-link reveal" href="https://www.instagram.com/thecreatiivesquare/" target="_blank" rel="noopener">View Full Portfolio →</a>
       </div>
     </section>
 
@@ -1400,8 +1378,12 @@
         </div>
         <h2 class="reveal">For the artist whose work is already extraordinary, but not yet seen that way.</h2>
         <p class="reveal" style="--delay: 0.1s">Let the portfolio begin to match the artistry.</p>
-        <a class="cta-button reveal" style="--delay: 0.2s" href="mailto:hello@creatiivesquare.com">Book a Consultation</a>
-        <div class="email reveal" style="--delay: 0.3s">hello@creatiivesquare.com</div>
+        <a class="cta-button reveal" style="--delay: 0.2s" href="mailto:creatiivesquare@gmail.com">Book a Consultation</a>
+        <div class="email reveal" style="--delay: 0.3s">creatiivesquare@gmail.com</div>
+        <div class="contact-links reveal" style="--delay: 0.4s">
+          <a href="https://wa.me/919915855075" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="tel:+919915855075">99158 55075</a>
+        </div>
       </div>
     </section>
   </main>
